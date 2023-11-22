@@ -1,1 +1,58 @@
-<body></body>
+
+<!DOCTYPE html>
+<html lang="ja" >
+
+<head>
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>meme editor</title>
+
+    <link rel="canonical" href="https://codepen.io/pinkromeo/pen/BaMrXqx">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  
+<style>
+@import url(https://hashsan.github.io/fujiyama/fujiyama.css);
+:root{
+  --background-2:url(https://i.pinimg.com/564x/27/3f/73/273f73861223c022adaa3e0ae382e3dc.jpg);  
+}
+
+[contenteditable]:before{
+  content:attr(data-url);
+  position:absolute;
+  top:0;
+  right:0.25rem;
+  color:#333;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <div class="pbox">
+  <header><a href="index.html">index</a></header>
+  <div class="wrap" 
+       contenteditable="plaintext-only"
+       ></div>
+  <footer class="r"><a href="#">goto^</a></footer>
+</div>
+  
+      <script id="rendered-js" type="module">
+import "//hashsan.github.io/use/use.js"
+import {editorU} from "//hashsan.github.io/meme/meme.js?v=2"
+
+const file = fn.URL.get().file ||'editorU.txt'
+editorU(file)
+    </script>
+
+  
+</body>
+
+</html>
