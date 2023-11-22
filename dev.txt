@@ -37,7 +37,11 @@ header{
 }
 ---
 また、右上のファイル名も。これもフィックスド。
-
+---
+[contenteditable]::before {
+    position: fixed;
+}
+---
 
 
 ＃ドラッグアンドドロップでなにかする？
