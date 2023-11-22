@@ -1,3 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>meme index</title>
+
+    <link rel="canonical" href="https://codepen.io/pinkromeo/pen/yLZjBoN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  
+<style>
+@import url(https://hashsan.github.io/fujiyama/fujiyama.css);
+:root{
+  --background-2:url(https://i.pinimg.com/564x/27/3f/73/273f73861223c022adaa3e0ae382e3dc.jpg);  
+}
+
+.wrap{
+  display:flex;
+  flex-direction:column-reverse;
+}
+.wrap a:hover{
+  border:unset;  
+  background:#eeea;
+}
+.wrap a:after{
+  content:attr(data-path)' | 'attr(data-message)' | 'attr(data-date);
+}
+</style>
+
+  
+  
+  
+</head>
+
 <body>
+  <div class="pbox">
+  <header><a href="index.html">index</a></header>
+  <div class="wrap"></div>
+  <footer class="r"><a href="#">goto^</a></footer>
+</div>
+  
+      <script id="rendered-js" type="module">
+import {IndexSite} from "//hashsan.github.io/meme/meme.js"
+
+new IndexSite('.wrap')
+    </script>
+
   
 </body>
+
+</html>
