@@ -24,7 +24,7 @@ function getUrl(){
 }
 
 
-async function editorU(file){
+export async function editorU(file){
   const ed = document.querySelector('[contenteditable]')
   if(!ed){    
     return console.log('contenteditable not found') 
